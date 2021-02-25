@@ -1,0 +1,120 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.full_cover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.popup{
+    width: 100%;
+    padding: 20px;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.popup .container{
+    display: grid;
+    grid-template-columns: 1fr 230px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd306;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.popup .container .close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: black;
+    font-size: 15px;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+.popup .popup--left{
+    text-align: center;
+}
+.popup .popup--right{
+    text-align: center;
+}
+.popup .popup--left h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+.popup .popup--left h2 span{
+    font-weight: normal;
+    display: block;
+}
+.popup .popup-form input[type='text']{
+    height: 37px;
+    width: 100%;
+    padding-left: 14px;
+    font-size: 12px;
+    color: #000;
+    border: 0;
+    margin-bottom: 10px;
+}
+.popup .popup-form input[type='email']{
+    height: 37px;
+    width: 100%;
+    padding-left: 14px;
+    font-size: 12px;
+    color: #000;
+    border: 0;
+    margin-bottom: 10px;
+}
+.popup .cbcontainer{
+    text-align: left;
+}
+.popup .cbcontainer label{
+    font-size: 11px;
+}
+.popup-form button{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    height: 42px;
+    border: 0;
+    margin-top: 20px;
+}
+.popup .pp{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.popup .pp a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid;
+}
+
+@media screen and (max-width:650px) {
+    .popup .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popup .popup--right{
+        display: none;
+    }
+}
